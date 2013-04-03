@@ -1,0 +1,41 @@
+{
+	"name": "google-sheets",
+	"version": "0.0.1",
+	"description": "Google Spreadsheet plugin that works",
+	"homepage": "https://github.com/benjamind/google-sheets",
+	"keywords": [
+		"google",
+		"gdata",
+		"spreadsheets",
+		"sheets",
+		"google spreadsheets"
+	],
+	"author": "Ben Delarre <ben@delarre.net> (http://www.delarre.net)",
+	"maintainers": [
+		"Ben Delarre <ben@delarre.net> (https://github.com/benjamind)"
+	],
+	"contributors": [
+		"Ben Delarre <ben@delarre.net> (https://github.com/benjamind)"
+	],
+	"bugs": {
+		"url": "https://github.com/benjamind/google-sheets/issues"
+	},
+	"repository" : {
+		"type": "git",
+		"url": "http://github.com/benjamind/google-sheets.git"
+	},
+	"engines" : {
+		"node": ">=0.4"
+	},
+	"dependencies": {
+		"googleclientlogin": "*",
+		"xml2js": "*",
+		"request": "*"
+	},
+	"devDependencies": {
+		"nodeunit": "*"
+	},
+	"scripts": {
+		"test": "nodeunit ./tests/index.js"
+	}
+}
