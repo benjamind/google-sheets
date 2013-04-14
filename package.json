@@ -1,7 +1,7 @@
 {
 	"name": "google-sheets",
 	"version": "0.0.1",
-	"description": "Google Spreadsheet plugin that works",
+	"description": "Read and modify Google Spreadsheets",
 	"homepage": "https://github.com/benjamind/google-sheets",
 	"keywords": [
 		"google",
@@ -31,9 +31,11 @@
 		"googleclientlogin": "*",
 		"xml2js": "*",
 		"xmlbuilder": "*",
-		"request": "*"
+		"request": "*",
+		"underscore": "*"
 	},
 	"devDependencies": {
+		"async": "*",
 		"nodeunit": "*"
 	},
 	"scripts": {
