@@ -9,7 +9,7 @@ module.exports = {
 		gsheets.auth({
 			email: process.env.GSHEETS_USER,
 			password: process.env.GSHEETS_PASS
-		}, function(err) {		
+		}, function(err) {
 			if (err) {
 				throw err;
 			}
