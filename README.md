@@ -22,8 +22,8 @@ A simple to use library for interacting with Google Spreadsheets.
 - [x] Modify
 
 ### Cells
-- [] Modify
-- [] Get
+- [ ] Modify
+- [ ] Get
 
 ## How to use
 
@@ -86,6 +86,7 @@ gsheets.auth({
 		});
 	}	
 });
+```
 
 ## Documentation
 
