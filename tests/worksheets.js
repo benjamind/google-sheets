@@ -9,7 +9,7 @@ module.exports = {
 		gsheets.auth({
 			email: process.env.GSHEETS_USER,
 			password: process.env.GSHEETS_PASS
-		}, function(err) {		
+		}, function(err) {
 			if (err) {
 				throw err;
 			}
@@ -25,6 +25,19 @@ module.exports = {
 	tearDown: function(callback) {
 		theSheet = null;
 		callback();
+	},
+	"get single worksheet": function(test) {
+		test.expect(4);
+		gsheets.getSpreadsheet('0Ak3gStO7i2cYdE0wdm1FNG1hOXh6V25aQl81bXBjTHc', function(err, sheet) {
+			test.ifError(err);
+			theSheet = sheet;
+			theSheet.getWorksheets(function(err, worksheets) {
+				test.ifError(err);
+				test.ok(Array.isArray(worksheets), 'Should get an array of worksheets');
+				test.ok(worksheets.length === 1, 'Should get 1 worksheets from the sheet got ' + worksheets.length);
+				test.done();
+			});
+		});
 	},
 	"get worksheets": function(test) {
 		test.expect(3);
@@ -111,7 +124,6 @@ module.exports = {
 					test.done();
 				});
 			});
-			
 		});
 	},
 	"resize worksheet": function(test) {
@@ -137,7 +149,6 @@ module.exports = {
 					test.done();
 				});
 			});
-			
 		});
 	}
 };
