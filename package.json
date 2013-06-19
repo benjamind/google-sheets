@@ -1,6 +1,6 @@
 {
   "name": "google-sheets",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Read and modify Google Spreadsheets",
   "homepage": "https://github.com/benjamind/google-sheets",
   "keywords": [
