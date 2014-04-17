@@ -30,7 +30,7 @@
   "dependencies": {
     "googleclientlogin": "*",
     "xml2js": "*",
-    "xmlbuilder": "*",
+    "xmlbuilder": "0.4.3",
     "request": "*",
     "underscore": "*"
   },
