@@ -18,7 +18,7 @@ A simple to use library for interacting with Google Spreadsheets.
 - [x] List
 - [x] Orderby & reverse support
 - [x] Simple Query support
-- [x] Remove
+- [ ] Remove
 - [x] Modify
 
 ### Cells

@@ -93,8 +93,11 @@ module.exports = {
 			title: 'A Test Worksheet'
 		}, function(err, worksheet) {
 			test.ifError(err);
+
 			test.ok(worksheet instanceof gsheets.Worksheet, 'Should return an instance of a worksheet');
+
 			test.ok(worksheet.getTitle() === 'A Test Worksheet');
+
 			// now delete it if this fails, fail the test as we'll corrupt our data!
 			theSheet.deleteWorksheet(worksheet, function(err) {
 				test.ifError(err);

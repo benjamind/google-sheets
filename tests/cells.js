@@ -1,11 +1,9 @@
+/* This is purely experimental! */
+
 var gsheets = require('../index'),
 	async = require('async');
 
 var theSheet = null, theWorksheet = null;
-
-process.env.GSHEETS_USSER = 'research@stacklead.com';
-process.env.GSHEETS_PASS = 'D8k7RHcaKcDthp';
-process.env.GSHEETS_TEST_KEY = '1hFq6szeB9jghU4mooS97EuMqknKIkXLdo_ti2JPAxZc';
 
 module.exports = {
 
